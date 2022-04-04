@@ -1,0 +1,64 @@
+<ion-content class="context">
+    <h2 class="title"><ion-icon name="calendar-number-outline"></ion-icon> Pendientes</h2>
+    <div class="accordion" id="accordionExample" *ngFor="let fecha of arrayCitas">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+fecha" aria-expanded="true"[attr.aria-controls]="'collapse'+fecha">
+            <h4 class="pendientes">Pendientes para el día: <strong>{{ fecha }}</strong></h4>
+          </button>
+        </h2>
+        <div [id]="'collapse'+fecha" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="accordion" id="accordionExample" *ngFor="let cita of citas">
+              <span *ngIf="fecha == cita.f_cita">
+                <div class="accordion-item-1">
+                  <h2 class="accordion-header-1" id="headingTwo">
+                    <button class="accordion-button" aria-expanded="true" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+cita.extendedProps.currentCita.id" aria-expanded="false"[attr.aria-controls]="'collapse'+cita.extendedProps.currentCita.id">
+                      <h5 class="paciente">Paciente: <strong>{{ cita.title}}</strong></h5>
+                    </button>
+                  </h2>
+                  <div [id]="'collapse'+cita.extendedProps.currentCita.id" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-6"><h4>Hora de Inicio:</h4></div>
+                        <div class="col-6"><h4><strong>{{cita.start}}</strong></h4></div>
+                        <br>
+                      </div>
+                      <hr>
+                      <div class="pac">
+                        <h4><i class="fa-solid fa-circle-user"></i> Información del Paciente</h4>
+                        <hr>
+                        <div class="row">
+                          <div class="col-3"><h5 class="campo">Correo</h5></div>
+                          <div class="col-9"><h5 class="datos">{{cita.extendedProps.currentCita.detPaciente.email}}</h5></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-3"><h5 class="campo">Celular</h5></div>
+                          <div class="col-9"><h5 class="datos">{{cita.extendedProps.currentCita.detPaciente.celular}}</h5></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-3"><h5 class="campo">Telefono</h5></div>
+                          <div class="col-9"><h5 class="datos">{{cita.extendedProps.currentCita.detPaciente.telefono}}</h5></div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-12">
+                          <button type="button" class="btn-grad" (click)="realizaLlamada(cita.extendedProps.currentCita.detPaciente.celular, cita)">Llamar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    </div>
+</ion-content>
+
+<div id="grad1"></div>
+<app-tabs></app-tabs>

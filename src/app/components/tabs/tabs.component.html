@@ -1,0 +1,25 @@
+<ion-tabs>
+  <ion-tab-bar>
+    <ion-tab-button (click)="home()">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="goToAsignadas()">
+      <ion-icon name="calendar-clear-outline"></ion-icon>
+      <ion-label>Citas Asignadas</ion-label>
+      <ion-badge *ngIf="citasAsignadas > 0" color="success"></ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="goToAceptadas()">
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+      <ion-label>Citas Aceptadas</ion-label>
+      <ion-badge *ngIf="citasAceptadas > 0" color="success"></ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="logOut()">
+      <ion-icon name="enter-outline"></ion-icon>
+      <ion-label>Salir</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

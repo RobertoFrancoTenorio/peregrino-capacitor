@@ -1,0 +1,60 @@
+.context {
+  margin-top: 50px;
+  margin-left: 5%;
+  position: absolute;
+  width: 90%;
+  z-index: 1;
+}
+
+ion-card{
+  --ion-background-color:rgb(255, 255, 255, 0.45);
+  --ion-border-radius: 50px;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 25px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+ion-label{
+  margin: 0 auto;
+  padding: 0;
+}
+
+ion-item{
+  border-radius: 25px;
+  --ion-background-color:rgba(255, 255, 255, 0);
+  color: #fff
+}
+
+ion-input, ion-textarea{
+  color: rgb(0, 0, 0);
+  font-weight: 700
+}
+
+ion-card-header{
+  width: 90%;
+  margin-left: 5%;
+
+}
+
+.header{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40px;
+  margin-bottom:0px;
+  padding-bottom: 0px;
+}
+
+.paciente{
+  margin-left:35px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.nombre{
+  margin-left:35px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}

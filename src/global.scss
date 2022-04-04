@@ -24,3 +24,120 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.my-custom-class{
+  --background: rgba(255, 255, 255, 0.493);
+  --box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  --border-radius: 100px;
+  --border: 1px solid rgba( 255, 255, 255, 0.18 );
+text-align: center;
+  h5{
+    margin: 0 auto;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+  }
+  .success{
+    color: #12a14b;
+    font-weight: bold;
+  }
+  .cancel{
+    color: #ce0707	;
+    font-weight: bold;
+  }
+  #question{
+    margin-top: 35px;
+    font-size: 64px;
+    color: #3574fc;
+  }
+  #check{
+    margin-top: 35px;
+    font-size: 64px;
+    color: #007527;
+  }
+  #error{
+    margin-top: 35px;
+    font-size: 64px;
+    color: #e40000;
+  }
+  .mensaje{
+    letter-spacing: 1px;
+  }
+  .input{
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 1px solid #fff
+  }
+
+  .input::placeholder{
+    color: rgba(255, 255, 255, 0.808);
+    font-weight:500;
+  }
+}
+
+#grad1{
+  background: linear-gradient(351deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+  height: 100%;
+  z-index: -100;
+}
+
+ion-list{
+  background-color: red;
+}
+
+ion-content{
+  --background-color: red;
+
+}
+
+.item-content {
+  background: rgba(255, 0, 0, 0.493);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%)}
+.btn-grad {
+   padding: 10px 20px 10px 20px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;
+   font-weight: bold;
+   border-radius: 10px;
+   display: block;
+   width: 100%;
+ }
+
+ .btn-grad:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+ .btn-grad-cancelar {background-image: linear-gradient(to right, #B24592 0%, #F15F79  51%, #B24592  100%)}
+ .btn-grad-cancelar {
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+   font-weight: bold;
+   display: block;
+   width: 100%
+  }
+
+  .btn-grad-cancelar:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }

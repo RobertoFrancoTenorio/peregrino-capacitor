@@ -1,0 +1,47 @@
+<ion-card class="context">
+  <h5 class="paciente">Paciente:</h5>
+  <h3 class="nombre"><i class="fa-solid fa-clipboard-user"></i> {{currentPaciente.pac_nombre_completo}}</h3>
+
+  <ion-card-content>
+    <form action="" [formGroup]="consultaForm">
+      <ion-item>
+        <ion-label>Presión arterial:</ion-label>
+        <ion-input formControlName="consulta_presion_arterial"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Temperatura (C°):</ion-label>
+        <ion-input formControlName="consulta_temp"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Frecuencia cardiaca:</ion-label>
+        <ion-input formControlName="consulta_frec_cardiaca"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Frecuencia Respiratoria:</ion-label>
+        <ion-input formControlName="consulta_frec_respiratoria"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Nota medica</ion-label>
+        <ion-textarea formControlName="consulta_nota_medica" rows="2" placeholder="Observaciones"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Diagnostico</ion-label>
+        <ion-textarea formControlName="consulta_diagnostico" rows="2" placeholder="Observaciones"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Tratamiento</ion-label>
+        <ion-textarea formControlName="consulta_tratamiento" rows="2" placeholder="Observaciones"></ion-textarea>
+      </ion-item>
+      <br>
+      <div class="row">
+        <div class="col-6">
+          <button type="button" class="btn-grad" (click)="enviarConsulta()">Aceptar</button>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn-grad-cancelar">Cancelar</button>
+        </div>
+      </div>
+    </form>
+  </ion-card-content>
+</ion-card>
+<div id="grad1"></div>

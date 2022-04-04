@@ -1,0 +1,52 @@
+
+<div class="context">
+  <span></span>
+  <span></span>
+  <h2 class="title"><ion-icon name="calendar-number-outline"></ion-icon> Pendientes</h2>
+  <div class="accordion" id="accordionExample" *ngFor="let fecha of arrayCitas; let i = index">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+i" aria-expanded="true"[attr.aria-controls]="'collapse'+i">
+          <h4 class="pendientes">Pendientes para el día: <strong>{{ fecha }}</strong></h4>
+        </button>
+      </h2>
+      <div [id]="'collapse'+i" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="accordion" id="accordionExample" *ngFor="let cita of citas; let j = index">
+            <span *ngIf="fecha == cita.f_cita">
+              <div class="accordion-item-1">
+                <h2 class="accordion-header-1" id="headingTwo">
+                  <button class="accordion-button" aria-expanded="true" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+cita.extendedProps.currentCita.id" aria-expanded="false"[attr.aria-controls]="'collapse'+cita.extendedProps.currentCita.id">
+                    <h5 class="paciente">Paciente: <strong>{{ cita.title}}</strong></h5>
+                  </button>
+                </h2>
+                <div [id]="'collapse'+cita.extendedProps.currentCita.id" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-6"><h4>Hora de Inicio:</h4></div>
+                      <div class="col-6"><h4><strong>{{cita.start}}</strong></h4></div>
+                      <br>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-6">
+                        <button type="button" (click)="aceptar(cita)" class="btn-grad" >Aceptar</button>
+                      </div>
+                      <div class="col-6">
+                        <button type="button" (click)="cancelar(cita)"  class="btn-grad-cancelar">Cancelar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <br>
+  </div>
+</div>
+<div id="grad1"></div>
+
+<app-tabs></app-tabs>

@@ -1,0 +1,189 @@
+.context {
+  margin-top: 10px;
+  margin-left: 5%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  height: 93%;
+}
+ion-content{
+  --ion-background-color:#111d1200;
+}
+
+.accordion{
+  border-radius: 10% 10% 0% 0%;
+}
+
+.accordion-item{
+  background: rgba(255, 255, 255, 0.226);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.6px);
+-webkit-backdrop-filter: blur(9.6px);
+}
+
+.accordion-item-1{
+  background: rgba(255, 255, 255, 0.43);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.1px);
+-webkit-backdrop-filter: blur(3.1px);
+}
+
+.accordion-header{
+  background-color: rgba(0, 17, 255, 0.192);
+  backdrop-filter: blur( 11px );
+  -webkit-backdrop-filter: blur( 11px );
+  border-radius: 10% 10% 0% 0%;
+}
+
+.accordion-header-1{
+  background-color: rgba(0, 17, 255, 0.192);
+  backdrop-filter: blur( 11px );
+  -webkit-backdrop-filter: blur( 11px );
+  border-radius: 10% 10% 0% 0%;
+}
+
+.accordion-button{
+  background-color: rgba(124, 212, 253, 0.76);
+  backdrop-filter: blur( 11px );
+  -webkit-backdrop-filter: blur( 11px );
+  border-radius: 10% 10% 0% 0%;
+}
+
+.accordion-body{
+  border-radius: 10% 10% 0% 0%;
+}
+
+.btn-success{
+  background: rgba(18, 0, 182, 0.479);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 10px 20px 10px 20px;
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  width: 100%;
+border-radius: 16px;
+}
+
+.btn-success{
+  background: rgba(18, 0, 182, 0.479);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 10px 20px 10px 20px;
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  width: 100%;
+border-radius: 16px;
+transition: background 0.6s 0s ease;
+}
+
+.btn-danger{
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.6px);
+-webkit-backdrop-filter: blur(11.6px);
+padding: 10px 20px 10px 20px;
+width: 100%;
+  font-weight: bold;
+  transition: background 0.6s 0s ease;
+  color: white
+}
+
+
+h1{
+  color: #ffffff;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.title{
+  margin: 30px 0 10PX 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+h2{
+  margin: 0 auto;
+}
+
+h4{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+
+.pendientes{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  color:rgb(255, 255, 255)
+}
+
+.paciente{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  color:rgb(255, 255, 255)
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%)}
+.btn-grad {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.btn-grad-cancelar {background-image: linear-gradient(to right, #B24592 0%, #F15F79  51%, #B24592  100%)}
+.btn-grad-cancelar {
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+  .btn-grad-cancelar:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+
+.pac{
+  text-align: center;
+}
+
+.campo{
+  font-weight: bold;
+}
+
+.datos{
+  text-align: right;
+}

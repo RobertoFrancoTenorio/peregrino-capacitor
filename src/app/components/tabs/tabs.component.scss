@@ -1,0 +1,33 @@
+ion-tab-bar{
+  --background: transparent!important;
+  --border-color:transparent!important;
+}
+ion-icon{
+  color:rgb(98, 218, 255);
+  font-weight: bold;
+
+}
+
+ion-label{
+  color:rgb(46, 206, 255);
+  font-size: 11px;
+  font-weight: bold;
+}
+
+ion-badge{
+  font-weight: bold;
+}
+
+.icon{
+  font-size: 24px;
+  color:rgb(46, 206, 255);
+  font-size: 24;
+}
+
+.label-tab{
+  color:rgb(46, 206, 255);
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  font-size: 12px;
+}
